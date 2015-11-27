@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/foundation.min.css" rel="stylesheet">
+</head>
+<body onload="myFunction()">
+<div class="div-color">
+    <div class="head-color">  <!--- Head division  Start-->
+
+        <div class="row">   <!--- Row division  Start-->
+
+            <div class="large-12 columns ">   <!--- Image column start-->
+
+                <center><h1 class="h1-font">WELCOME</h1>
+
+                    <p class="p-font">Beautifully Designed Application for almonature customers and sales
+                        representatives </p></center>
+            </div>
+        </div>
+
+        <div class="row">
+            <center>
+                <div class="large-6 columns">
+                    <img src="assets/landing_page.png">
+
+                    <div class="row">
+                        <div class="large-6 columns">
+                          <a href="#"> <img id="android" src="assets/Android1.png" alt="Google play store"></a>
+                        </div>
+                        <div class="large-6 columns">
+                        <a hr>  <img id="ipad" src="assets/store1.png" alt="Apple store"></a>
+                        </div>
+                        <!--<div class="large-6 columns float-right"></div>-->
+                    </div>
+                </div>
+            </center>
+            <div class="large-6 columns ">  <!--- Form column start-->
+
+                <center>
+                    <div class="form">
+                        <div class="form-text">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><label class="label-text">I Have a User Name</label></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-space">
+                                        <button class="btn-login btn-size">LOGIN</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label class="label-text">I Don’t Have a User Name</label></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-space">
+                                        <button class="btn-login btn-size">I’M INTERESTED</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>   <!--- Form column end-->
+
+                </center>
+
+            </div>   <!--- column column end-->
+
+        </div>
+
+    </div>    <!--Head div ends-->
+
+</div>
+
+<script>
+    function myFunction() {
+        var x = navigator.platform;
+        if (x == 'android') {
+            document.getElementById("android").style.display = 'block';
+        }
+        if (x == 'ipad') {
+            document.getElementById("ipad").style.display = 'block';
+        } else {
+            document.getElementById("android").style.display = 'block';
+            document.getElementById("ipad").style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>
